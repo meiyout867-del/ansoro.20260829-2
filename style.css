@@ -198,6 +198,12 @@ body {
     margin: 22px 0
 }
 
+.nglist {
+    background: #dbe5ffcc;
+    padding: 10px 26px;
+    /* margin: 22px 0*/
+}
+
 .timeline {
     border-left: 1px solid #b9d4e4;
     margin-left: 10px
@@ -226,6 +232,10 @@ body {
 
 .timeline b {
     color: var(--deep)
+}
+
+.ng {
+    color: #0026ff
 }
 
 .small,
