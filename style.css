@@ -27,12 +27,8 @@ body {
 }
 
 .loading-logo {
-    font-family: serif;
-    text-align: center;
-    font-size: clamp(38px, 8vw, 76px);
-    letter-spacing: .12em;
-    color: var(--deep);
-    line-height: 1.25
+    width: min(70vw, 500px);
+    height: auto;
 }
 
 .loading-logo:after {
@@ -42,6 +38,13 @@ body {
     height: 1px;
     background: var(--gold);
     margin: 24px auto
+}
+
+.main-logo {
+    display: block;
+    width: min(80vw, 650px);
+    height: auto;
+    margin: 0 auto;
 }
 
 @keyframes out {
