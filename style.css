@@ -196,10 +196,37 @@ body {
     margin: .55em 0
 }
 
+.subtitle {
+    color: #245861;
+    font-family: "BIZ UD明朝";
+    /*background: #e8fcff;*/
+    text-align: center;
+    /*padding: 20px 20px;
+    margin: 22px 0*/
+}
+
+.title {
+    color: #b89442;
+    font-family: "BIZ UD明朝";
+    font-size: 1.75rem;
+    /*background: #e8fcff;*/
+    text-align: center;
+    padding: 20px 0px;
+    margin: 22px 0
+}
+
+.about {
+    color: #245861;
+    font-family: "BIZ UD明朝";
+    text-align: center;
+    padding: 20px 0px;
+    /*margin: 22px 0*/
+}
+
 .theme {
     color: #b89442;
     font-family: "BIZ UD明朝";
-    background: #ffffffcc;
+    /*background: #e8fcff;*/
     text-align: center;
     padding: 20px 20px;
     margin: 22px 0
