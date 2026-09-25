@@ -1,5 +1,5 @@
 :root {
-    --deep: #174b72;
+    --deep: #327c89;
     --gold: #b89442;
     --text: #263744
 }
@@ -137,10 +137,12 @@ body {
     margin: 0
 }
 
+/*
 .theme {
     font-family: serif;
     color: #587b91
 }
+*/
 
 .hero-link {
     display: inline-block;
@@ -192,6 +194,14 @@ body {
 
 .section li {
     margin: .55em 0
+}
+
+.theme {
+    color: #b89442;
+    background: #ffffffcc;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 22px 0
 }
 
 .notice {
