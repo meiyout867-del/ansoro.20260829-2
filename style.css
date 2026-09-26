@@ -220,15 +220,17 @@ body {
     font-family: "BIZ UD明朝";
     text-align: center;
     padding: 20px 0px;
+    white-space: nowrap;
     /*margin: 22px 0*/
 }
 
 .theme {
     color: #b89442;
     font-family: "BIZ UD明朝";
+    display: inline-block;
     /*background: #e8fcff;*/
     text-align: center;
-    padding: 20px 20px;
+    padding: 20px 30px;
     margin: 22px 0
 }
 
