@@ -163,7 +163,7 @@ body {
 .section h2 {
     font-family: "BIZ UD明朝";
     color: var(--deep);
-    font-size: 2.1rem;
+    font-size: clamp(2.0rem, calc(0.191rem + 2.8vw), 3.0rem);
     font-weight: 400;
     letter-spacing: .12em;
     margin: 0 0 50px;
@@ -182,7 +182,7 @@ body {
 .section h3 {
     font-family: "BIZ UD明朝";
     color: var(--deep);
-    font-size: 1.35rem;
+    font-size: clamp(0.5rem, calc(0.191rem + 2.8vw), 1.0rem);
     font-weight: 400;
     margin-top: 55px
 }
@@ -227,7 +227,8 @@ body {
 .theme {
     color: #b89442;
     font-family: "BIZ UD明朝";
-    display: inline-block;
+    /*display: inline-block;*/
+    font-size: clamp(0.5rem, calc(0.191rem + 2.8vw), 1.0rem);
     /*background: #e8fcff;*/
     text-align: center;
     padding: 20px 30px;
