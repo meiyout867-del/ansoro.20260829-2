@@ -166,10 +166,10 @@ body {
     font-size: 2.0rem;
     font-weight: 400;
     letter-spacing: .12em;
-    margin: 0 0 50px;
+    margin: 0 0 0.5rem;
     display: flex;
     align-items: center;
-    gap: 18px
+    /*gap: 18px*/
 }
 
 .section h2:after {
@@ -231,11 +231,11 @@ body {
     color: #b89442;
     font-family: "BIZ UD明朝";
     /*display: inline-block;*/
-    font-size: clamp(0.5rem, calc(0.191rem + 2.8vw), 1.0rem);
+    /* font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);*/
     /*background: #e8fcff;*/
     text-align: center;
-    padding: 1.0rem 0.5rem;
-    margin: 22px 0
+    padding: 1.0rem 0;
+    margin: 1.0rem 0 5.0rem
 }
 
 .notice {
@@ -329,6 +329,10 @@ footer p {
 .hanten {
     text-emphasis: dot;
     /* 点をつける */
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
 }
 
 @media(max-width:700px) {
