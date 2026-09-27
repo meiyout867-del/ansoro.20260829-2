@@ -71,6 +71,7 @@ body {
     color: var(--deep);
     text-decoration: none;
     font-family: "BIZ UD明朝";
+    letter-spacing: .125em;
     font-size: 1.25rem
 }
 
@@ -198,7 +199,8 @@ body {
 
 
 .title {
-    font-family: "BIZ UD明朝";
+    font-family: "Source Han Serif JP", "Noto Serif JP", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN", serif;
+    letter-spacing: .4em;
     /*background: #e8fcff;*/
     text-align: center;
     padding: 20px 0px;
