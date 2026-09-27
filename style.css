@@ -199,8 +199,7 @@ body {
 
 
 .title {
-    font-family: "Source Han Serif JP", "Noto Serif JP", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN", serif;
-    letter-spacing: .4em;
+    font-family: "BIZ UD明朝";
     /*background: #e8fcff;*/
     text-align: center;
     padding: 20px 0px;
@@ -210,6 +209,7 @@ body {
 .subtitle {
     color: #245861;
     font-family: "BIZ UD明朝";
+    letter-spacing: .125em;
     /*background: #e8fcff;*/
     /*padding: 20px 20px;
     margin: 22px 0*/
@@ -217,7 +217,9 @@ body {
 
 .title-honbun {
     color: #b89442;
+    font-family: "Source Han Serif JP", "Noto Serif JP", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN", serif;
     font-size: 2.0rem;
+    letter-spacing: .125em;
 }
 
 .about {
