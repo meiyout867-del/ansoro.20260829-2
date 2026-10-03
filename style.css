@@ -271,7 +271,75 @@ body {
     text-align: center;
     font-size: .90rem;
     padding: 1.0rem 0;
-    margin: 1.0rem 0 10.0rem
+    margin: 1.0rem 0 10.0rem;
+    line-height: 1.8;
+}
+
+.layered-section {
+    position: relative;
+    width: 100%;
+    max-width: 680px;
+    box-sizing: border-box;
+    margin: 60px auto;
+    padding: 45px 0 55px;
+}
+
+/* 背面の長方形 */
+.layer {
+    position: absolute;
+    width: 82%;
+    height: 85%;
+    /* border: 0.25px solid #b89442;*/
+    box-sizing: border-box;
+}
+
+/* 清澄さん */
+.layer-back {
+    top: 0;
+    left: 0;
+    background: #b9d4f1a2;
+}
+
+/* 北村さん */
+.layer-front {
+    right: 0;
+    bottom: 0;
+    background: #bad0bb9c;
+}
+
+/* 中央の本文エリア */
+.layer-content {
+    position: relative;
+    z-index: 1;
+    width: 82%;
+    box-sizing: border-box;
+    margin-left: 10%;
+    padding: 40px;
+    /* border: 1px solid #777; */
+    background: #d4e7f3b0;
+    text-align: center;
+}
+
+.layer-content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+}
+
+/* スマートフォン */
+@media (max-width: 600px) {
+    .layered-section {
+        min-height: 360px;
+        margin: 40px auto;
+    }
+
+    .layer-content {
+        padding: 20px;
+    }
+
+    .layer-content h2 {
+        font-size: 1.8rem;
+    }
 }
 
 
