@@ -251,7 +251,8 @@ body {
     /*margin: 22px 0*/
 }
 
-.theme {
+
+.theme-content {
     color: #b89442;
     font-family: "BIZ UD明朝";
     /*display: inline-block;*/
@@ -262,6 +263,7 @@ body {
     padding: 1.0rem 0;
     margin: 1.0rem 0 10.0rem
 }
+
 
 .notice {
     background: #ffffffcc;
@@ -359,6 +361,21 @@ footer p {
 .vertical-text {
     writing-mode: vertical-rl;
 }
+
+/* アニメーション前の初期状態 */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    /* 0.8秒かけて変化 */
+}
+
+/* 画面内に入ったときの状態 */
+.fade-up.is-show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 @media(max-width:700px) {
     .site-header nav {
