@@ -186,7 +186,17 @@ body {
     content: "";
     height: 1px;
     background: var(--gold);
-    width: 80px
+    width: 80px;
+
+    /* アニメーション開始前 */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease;
+}
+
+/* 表示されたとき */
+.section h2.is-visible:after {
+    transform: scaleX(1);
 }
 
 .section h3 {
@@ -366,7 +376,7 @@ footer p {
 .fade-up {
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 2.0s ease, transform 2.0s ease;
     /* 0.8秒かけて変化 */
 }
 
