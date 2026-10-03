@@ -158,7 +158,16 @@ body {
 .section {
     max-width: 920px;
     margin: auto;
-    padding: 90px 28px
+    padding: 90px 28px;
+    /*
+    background-color: #f8f7f1;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.45)),
+        url("washi.jpg");
+    background-repeat: repeat, repeat;
+    background-size: auto, 600px auto;
+*/
 }
 
 .section h2 {
@@ -197,6 +206,7 @@ body {
     margin: .55em 0
 }
 
+/*
 .washi {
     background-color: #f8f7f1;
     background-image:
@@ -206,6 +216,7 @@ body {
     background-repeat: repeat, repeat;
     background-size: auto, 600px auto;
 }
+    */
 
 .title {
     font-family: "BIZ UD明朝";
