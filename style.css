@@ -362,7 +362,7 @@ body {
     text-align: center;
     font-size: clamp(0.6rem, calc(0.191rem + 2.8vw), 1.0rem);
     letter-spacing: .125em;
-    line-height: .9rem;
+    line-height: 3;
     width: 86%;
     padding: 3.2rem .7rem;
     margin: 1.0rem auto;
@@ -371,7 +371,7 @@ body {
 
 .theme-content p {
     margin: 0;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 @media (max-width: 600px) {
