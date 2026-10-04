@@ -12,7 +12,7 @@ body {
     margin: 0;
     color: var(--text);
     font-family: "FOT-UD角ゴ", "Hiragino Kaku Gothic ProN", sans-serif;
-    font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 0.9rem);
+    font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);
     line-height: 1.9;
     background: linear-gradient(#f8fdff, #eef9ff 45%, #fff)
 }
@@ -207,13 +207,14 @@ body {
     /*background: #e8fcff;*/
     text-align: center;
     padding: 20px 0px;
-    margin: 22px 0
+    margin: 22px 0 30px
 }
 
 .subtitle {
     color: #245861;
     font-family: "BIZ UD明朝";
     letter-spacing: .125em;
+    font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.25rem);
     /*background: #e8fcff;*/
     /*padding: 20px 20px;
     margin: 22px 0*/
@@ -222,7 +223,7 @@ body {
 .title-honbun {
     color: #b89442;
     font-family: "Source Han Serif JP", "Noto Serif JP", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN", serif;
-    font-size: 2.0rem;
+    font-size: clamp(2.0rem, 4vw, 3.0rem);
     letter-spacing: .125em;
 }
 
@@ -230,7 +231,7 @@ body {
     color: #245861;
     font-family: "BIZ UD明朝";
     text-align: center;
-    font-size: .90rem;
+    font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);
     /*padding: 1.0rem 0px;*/
     /*margin: 22px 0*/
 }
@@ -243,7 +244,7 @@ body {
     /* font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);*/
     background: #ffffffb9;
     text-align: center;
-    font-size: .8rem;
+    font-size: clamp(0.7rem, calc(0.191rem + 2.8vw), 1.0rem);
     letter-spacing: .125em;
     line-height: .9rem;
     width: 86%;
@@ -255,8 +256,8 @@ body {
 .layered-section {
     position: relative;
     width: 100%;
-    max-width: 680px;
-    margin: 10px auto 20px;
+    /*max-width: 920px;*/
+    margin: 70px auto 70px;
     padding: 30px 0 30px;
     box-sizing: border-box;
 }
@@ -271,14 +272,14 @@ body {
 
 /* 左上 */
 .layer-back {
-    top: 0;
-    left: 10%;
+    top: -12%;
+    left: 5%;
 }
 
 /* 右下 */
 .layer-front {
-    right: 10%;
-    bottom: 0;
+    right: 5%;
+    bottom: -12%;
 }
 
 /* 共通の円 */
@@ -295,10 +296,16 @@ body {
     height: 100%;
 }
 
-/* 小さい円 */
-.circle-small {
+/* 中くらいの円 */
+.circle-middle {
     width: 60%;
     height: 60%;
+}
+
+/* 小さい円 */
+.circle-small {
+    width: 8%;
+    height: 8%;
 }
 
 /* 左上の大小円 */
@@ -308,12 +315,21 @@ body {
     background: #79a5df93;
 }
 
-.layer-back .circle-small {
+.layer-back .circle-middle {
     top: 30%;
     left: 40%;
     width: 80%;
     height: 80%;
     background: #53ad1296;
+}
+
+.layer-back .circle-small {
+    top: 80%;
+    left: 23%;
+    width: 30%;
+    height: 30%;
+    border: 1.5px solid #b89442;
+    /*background: #ffffffb4;*/
 }
 
 /* 右下の大小円 */
@@ -323,12 +339,21 @@ body {
     background: #4675258a;
 }
 
-.layer-front .circle-small {
+.layer-front .circle-middle {
     right: 40%;
     bottom: 30%;
     width: 80%;
     height: 80%;
     background: #117cff8a;
+}
+
+.layer-front .circle-small {
+    right: 25%;
+    bottom: 70%;
+    width: 50%;
+    height: 50%;
+    border: 1.5px solid #b89442;
+    /*background: #ffffff6e;*/
 }
 
 /* 本文エリア */
