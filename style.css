@@ -256,14 +256,14 @@ body {
 
 /* 左上 */
 .layer-back {
-    top: -12%;
+    top: -5%;
     left: 5%;
 }
 
 /* 右下 */
 .layer-front {
     right: 5%;
-    bottom: -12%;
+    bottom: -5%;
 }
 
 /* 共通の円 */
@@ -388,13 +388,13 @@ body {
     /* 左上 */
     .layer-back {
         left: -2%;
-        top: -5%;
+        top: -2%;
     }
 
     /* 右下 */
     .layer-front {
         right: -2%;
-        bottom: -5%;
+        bottom: -2%;
     }
 
     .layer-content {
