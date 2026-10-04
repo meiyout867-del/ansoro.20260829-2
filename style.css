@@ -12,7 +12,7 @@ body {
     margin: 0;
     color: var(--text);
     font-family: "FOT-UD角ゴ", "Hiragino Kaku Gothic ProN", sans-serif;
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);
     line-height: 1.9;
     background: linear-gradient(#f8fdff, #eef9ff 45%, #fff)
 }
@@ -355,14 +355,17 @@ body {
         margin: 40px auto;
     }
 
+    /* 円を配置するエリア */
     .layer {
-        width: 28%;
+        width: 35%;
     }
 
+    /* 左上 */
     .layer-back {
         left: 5%;
     }
 
+    /* 右下 */
     .layer-front {
         right: 5%;
         bottom: 30px;
