@@ -12,7 +12,7 @@ body {
     margin: 0;
     color: var(--text);
     font-family: "FOT-UD角ゴ", "Hiragino Kaku Gothic ProN", sans-serif;
-    font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);
+    font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 0.9rem);
     line-height: 1.9;
     background: linear-gradient(#f8fdff, #eef9ff 45%, #fff)
 }
@@ -188,7 +188,7 @@ body {
 .section h3 {
     font-family: "BIZ UD明朝";
     color: var(--deep);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
     margin-top: 55px
 }
@@ -309,7 +309,7 @@ body {
 }
 
 .layer-back .circle-small {
-    top: 33%;
+    top: 30%;
     left: 40%;
     width: 80%;
     height: 80%;
@@ -325,7 +325,7 @@ body {
 
 .layer-front .circle-small {
     right: 40%;
-    bottom: 33%;
+    bottom: 30%;
     width: 80%;
     height: 80%;
     background: #117cff8a;
@@ -362,13 +362,14 @@ body {
 
     /* 左上 */
     .layer-back {
-        left: 5%;
+        left: -2%;
+        top: -5%;
     }
 
     /* 右下 */
     .layer-front {
-        right: 5%;
-        bottom: 30px;
+        right: -2%;
+        bottom: -5%;
     }
 
     .layer-content {
@@ -395,6 +396,8 @@ body {
 .nglist {
     background: #aed5dd;
     padding: 10px 26px;
+    font-size: .75rem;
+    line-height: 1.2rem;
     /* margin: 22px 0*/
 }
 
