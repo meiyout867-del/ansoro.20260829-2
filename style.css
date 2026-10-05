@@ -406,6 +406,8 @@ body {
     .theme-content {
         width: 86%;
         padding: 2.4rem 1rem;
+        font-size: clamp(0.5rem, calc(0.191rem + 2.8vw), 1.0rem);
+        letter-spacing: .1em;
     }
 }
 
