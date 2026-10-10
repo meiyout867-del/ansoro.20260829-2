@@ -354,12 +354,13 @@ body {
 }
 
 .theme-content {
+    --theme-background-opacity: 0.50;
+    position: relative;
+    isolation: isolate;
     color: #b89442;
     font-family: "BIZ UD明朝";
     /*display: inline-block;*/
     /* font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);*/
-    background-image: url("washi.png");
-    background-repeat: repeat;
     text-align: center;
     font-size: clamp(0.6rem, calc(0.191rem + 2.8vw), 1.0rem);
     letter-spacing: .125em;
@@ -368,6 +369,16 @@ body {
     padding: 3.2rem .7rem;
     margin: 1.0rem auto;
     box-sizing: border-box;
+}
+
+.theme-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: url("washi.png") repeat;
+    opacity: var(--theme-background-opacity);
+    pointer-events: none;
 }
 
 .theme-content p {
@@ -580,9 +591,9 @@ footer p {
 .author-card {
     min-width: 0;
     padding: 22px;
-    border: 0.1px solid #ffffff;
+    border: 1px solid #ffffff;
     background-color: #eeeeee;
-    background-image: url("washi.png");
+    background-image: url("washi_author.png");
     background-repeat: repeat;
     background-size: 400px 400px;
     background-position: top left;
