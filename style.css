@@ -358,7 +358,7 @@ body {
     font-family: "BIZ UD明朝";
     /*display: inline-block;*/
     /* font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);*/
-    background-image: url("images/washi.png");
+    background-image: url("washi.png");
     background-repeat: repeat;
     text-align: center;
     font-size: clamp(0.6rem, calc(0.191rem + 2.8vw), 1.0rem);
@@ -582,7 +582,7 @@ footer p {
     padding: 22px;
     border: 1px solid #ffffff;
     background-color: #eeeeee;
-    background-image: url("images/washi.png");
+    background-image: url("washi.png");
     background-repeat: repeat;
     background-size: 400px 400px;
     background-position: top left;
