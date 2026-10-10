@@ -144,10 +144,10 @@ body {
     display: inline-block;
     margin-top: 28px;
     padding: 9px 24px;
-    border: 1px solid var(--gold);
-    color: var(--deep);
+    border: 1px solid #ffffff;
+    color: #ffffff;
     text-decoration: none;
-    background: #ffffff88
+    background: #b89442;
 }
 
 .section {
@@ -358,7 +358,8 @@ body {
     font-family: "BIZ UD明朝";
     /*display: inline-block;*/
     /* font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);*/
-    background: #ffffffb9;
+    background-image: url("images/washi.png");
+    background-repeat: repeat;
     text-align: center;
     font-size: clamp(0.6rem, calc(0.191rem + 2.8vw), 1.0rem);
     letter-spacing: .125em;
@@ -558,5 +559,156 @@ footer p {
 
     .hero h1 {
         font-size: 3rem
+    }
+}
+
+
+
+/* 執筆者一覧 */
+.authors-intro {
+    text-align: center;
+    margin: 0 0 36px;
+}
+
+.author-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+.author-card {
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid #ffffff;
+    background-color: #eeeeee;
+    background-image: url("images/washi.png");
+    background-repeat: repeat;
+    background-size: 400px 400px;
+    background-position: top left;
+    text-align: center;
+}
+
+.author-sample {
+    margin: 0 0 18px;
+}
+
+.author-sample[hidden] {
+    display: none;
+}
+
+.author-sample img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    border: 1px solid #b7b7b7;
+}
+
+.author-name {
+    margin: 0 0 24px !important;
+    color: #245861 !important;
+    font-size: 1.25rem !important;
+    overflow-wrap: anywhere;
+}
+
+.author-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #52616a;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.author-X img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.author-pixiv img {
+    width: auto;
+    height: 26px;
+    object-fit: contain;
+}
+
+.author-X:hover,
+.author-pixiv:hover {
+    opacity: .72;
+}
+
+.authors-note {
+    margin-top: 22px;
+    text-align: center;
+}
+
+/* 企画ページ */
+.event-page h3 {
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 8px;
+}
+
+.event-page li {
+    margin: .8em 0;
+}
+
+.event-schedule {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.event-schedule>div {
+    padding: 16px 20px;
+    background: #ffffffc9;
+    border-left: 3px solid var(--gold);
+}
+
+.event-schedule time {
+    color: var(--deep);
+    font-weight: 600;
+}
+
+.event-schedule p {
+    margin: 4px 0 0;
+}
+
+.webonly-announcement {
+    margin: 36px auto;
+    padding: 42px 20px;
+    text-align: center;
+    background: #ffffffb9;
+    border: 1px solid #dcecf5;
+}
+
+.webonly-date {
+    color: var(--deep);
+    font-family: "BIZ UD明朝", serif;
+    font-size: clamp(1.25rem, 3vw, 1.8rem);
+    letter-spacing: .08em;
+}
+
+@media (min-width: 700px) {
+    .author-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px;
+    }
+
+    .author-card {
+        padding: 22px 28px;
+    }
+
+    .event-schedule {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }

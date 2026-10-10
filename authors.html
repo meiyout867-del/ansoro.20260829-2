@@ -12,17 +12,44 @@
 </head>
 
 <body>
-    <header class="site-header"><a class="brand" href="index.html">澄み空かさねて</a><button class="menu">☰</button>
-        <nav><a href="index.html">概要</a><a href="guidelines.html">原稿規定</a><a href="authors.html">執筆者一覧</a><a
-                href="sample.html">サンプル</a></nav>
+    <header class="site-header">
+        <a class="brand" href="index.html">澄み空かさねて</a>
+        <button class="menu" aria-label="メニューを開閉" aria-expanded="false">☰</button>
+        <nav>
+            <a href="index.html">概要</a>
+            <a href="guidelines.html">原稿規定</a>
+            <a href="authors.html" aria-current="page">執筆者一覧</a>
+            <a href="sample.html">サンプル</a>
+            <a href="onelai.html">おためしワンライ</a>
+            <a href="webonly.html">ウェブオンリー</a>
+        </nav>
     </header>
     <main>
-        <section class="section">
+        <section class="section authors-section">
             <h2>執筆者一覧</h2>
-            <div class="coming">
-                <div class="placeholder">COMING<br>SOON</div>
-                <p>順次公開予定</p>
+            <p class="authors-intro">五十音順 | 敬称略</p>
+            <div class="author-grid">
+                <!-- 執筆者を追加するときは author-card を複製してください。
+                     サンプル画像を公開する場合は sample-preview の hidden を外し、
+                     img の src に画像ファイル名を指定してください。 -->
+                <article class="author-card">
+                    <div class="author-sample" hidden>
+                        <img class="sample-preview" src="images/washi.png" alt="作品サンプル">
+                    </div>
+                    <h3 class="author-name">ペンネーム＜小説＞</h3>
+                    <div class="author-links">
+                        <a class="author-X" href="https://x.com/fho_cj" target="_blank" rel="noopener noreferrer"
+                            aria-label="Xアカウント">
+                            <img src="images/x-logo.png" alt="">
+                        </a>
+                        <a class="author-pixiv" href="https://www.pixiv.net/users/17598611" target="_blank"
+                            rel="noopener noreferrer" aria-label="pixivアカウント">
+                            <img src="images/pixiv-logo.png" alt="">
+                        </a>
+                    </div>
+                </article>
             </div>
+            <!--<p class="small authors-note">※リンク先・サンプル画像は、公開許可を得たもののみ掲載します。</p>-->
         </section>
     </main>
     <footer>
