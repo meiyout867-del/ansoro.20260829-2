@@ -580,7 +580,7 @@ footer p {
 .author-card {
     min-width: 0;
     padding: 22px;
-    border: 1px solid #ffffff;
+    border: 0.1px solid #ffffff;
     background-color: #eeeeee;
     background-image: url("washi.png");
     background-repeat: repeat;
