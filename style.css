@@ -354,7 +354,7 @@ body {
 }
 
 .theme-content {
-    --theme-background-opacity: 0.70;
+    --theme-background-opacity: 0.80;
     position: relative;
     isolation: isolate;
     color: #b89442;
