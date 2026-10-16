@@ -94,15 +94,44 @@ body {
     font-size: 1.5rem
 }
 
+
+
+
+
 .hero {
     min-height: 78vh;
     display: grid;
     place-items: center;
     text-align: center;
-    background: radial-gradient(circle at 20% 25%, #fff 0 7%, transparent 27%), linear-gradient(#d9f2ff, #fff 75%);
+
+    background:
+        linear-gradient(135deg,
+            #d9f2ff,
+            #ffffff,
+            #c8e9f8,
+            #f8fdff);
+    background-size: 300% 300%;
+    animation: marble-flow 10s ease-in-out infinite alternate;
+
     position: relative;
-    overflow: hidden
+    overflow: hidden;
 }
+
+@keyframes marble-flow {
+    0% {
+        background-position: 0% 30%;
+    }
+
+    50% {
+        background-position: 100% 70%;
+    }
+
+    100% {
+        background-position: 0% 30%;
+    }
+}
+
+
 
 .sky {
     position: relative;
@@ -572,8 +601,6 @@ footer p {
         font-size: 3rem
     }
 }
-
-
 
 /* 執筆者一覧 */
 .authors-intro {
