@@ -233,7 +233,7 @@ body {
     /*background: #e8fcff;*/
     text-align: center;
     padding: 20px 0px;
-    margin: 22px 0 55px
+    margin: 22px 0 2px
 }
 
 .subtitle {
@@ -331,7 +331,7 @@ body {
     font-size: clamp(0.45rem, calc(0.191rem + 2.8vw), 0.75rem);
     letter-spacing: .2em;
     line-height: 2.7;
-    margin: 80px 5px;
+    margin: 60px 5px 90px;
     padding: 1.0rem 0px;
 }
 
@@ -387,7 +387,7 @@ body {
 
 .layer-back .circle-middle {
     top: 20%;
-    left: 40%;
+    left: 50%;
     background: #53ad1296;
 }
 
@@ -409,7 +409,7 @@ body {
 
 .layer-front .circle-middle {
     bottom: 20%;
-    right: 40%;
+    right: 50%;
     background: #117cff8a;
 }
 
@@ -439,6 +439,7 @@ body {
     --theme-background-opacity: 0.90;
     position: relative;
     isolation: isolate;
+    border: 1px solid #b89442;
     color: #245861;
     font-family: "BIZ UDP明朝";
     /*display: inline-block;*/
@@ -457,13 +458,12 @@ body {
     inset: 0;
     z-index: -1;
     background: url("washi.png") repeat;
-    border: 0.5px solid #b89442;
     opacity: var(--theme-background-opacity);
     pointer-events: none;
 }
 
 .theme-content p {
-    margin: 30px auto;
+    margin: 40px auto;
     line-height: 2.7;
 }
 
@@ -488,7 +488,7 @@ body {
     }
 
     .theme-content {
-        width: 90%;
+        width: 100%;
         padding: 2.4rem 1rem;
         font-size: clamp(0.5rem, calc(0.191rem + 2.8vw), 0.8rem);
         letter-spacing: .1em;
