@@ -272,13 +272,13 @@ body {
 }
 
 .title-decoration .layer-back {
-    top: -12%;
-    left: 5%;
+    top: -10%;
+    left: 4%;
 }
 
 .title-decoration .layer-front {
-    right: 5%;
-    bottom: -12%;
+    right: 4%;
+    bottom: -10%;
 }
 
 .title-decoration .circle {
@@ -488,7 +488,7 @@ body {
     }
 
     .theme-content {
-        width: 100%;
+        width: 93%;
         padding: 2.4rem 1rem;
         font-size: clamp(0.5rem, calc(0.191rem + 2.8vw), 0.8rem);
         letter-spacing: .1em;
