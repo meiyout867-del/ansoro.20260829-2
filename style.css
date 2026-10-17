@@ -71,7 +71,7 @@ body {
 .brand {
     color: var(--deep);
     text-decoration: none;
-    font-family: "BIZ UD明朝";
+    font-family: "BIZ UDP明朝";
     letter-spacing: .125em;
     font-size: 1.25rem
 }
@@ -133,7 +133,7 @@ body {
 
 @media (max-width: 600px) {
     .hero {
-        animation: marble-flow 3s ease-in-out infinite alternate;
+        animation: marble-flow 7s ease-in-out infinite alternate;
     }
 }
 
@@ -156,16 +156,8 @@ body {
     font-size: .78rem
 }
 
-.cupname {
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-size: 1.50rem;
-    margin: 0
-}
-
 .hero h1 {
-    font-family: "BIZ UD明朝";
+    font-family: "BIZ UDP明朝";
     font-size: clamp(3rem, 8vw, 6.5rem);
     font-weight: 400;
     letter-spacing: .15em;
@@ -191,7 +183,7 @@ body {
 }
 
 .section h2 {
-    font-family: "BIZ UD明朝";
+    font-family: "BIZ UDP明朝";
     color: var(--deep);
     font-size: 2.0rem;
     font-weight: 400;
@@ -220,7 +212,7 @@ body {
 }
 
 .section h3 {
-    font-family: "BIZ UD明朝";
+    font-family: "BIZ UDP明朝";
     color: var(--deep);
     font-size: 1.25rem;
     font-weight: 400;
@@ -237,7 +229,7 @@ body {
 }
 
 .title {
-    font-family: "BIZ UD明朝";
+    font-family: "BIZ UDP明朝";
     /*background: #e8fcff;*/
     text-align: center;
     padding: 20px 0px;
@@ -246,7 +238,7 @@ body {
 
 .subtitle {
     color: #245861;
-    font-family: "BIZ UD明朝";
+    font-family: "BIZ UDP明朝";
     font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.25rem);
     letter-spacing: .4em;
     line-height: 2.8;
@@ -258,21 +250,89 @@ body {
 .title-honbun {
     color: #b89442;
     font-family: "Source Han Serif JP", "Noto Serif JP", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN", serif;
-    font-size: clamp(2.0rem, 4vw, 3.0rem);
+    font-size: clamp(1.7rem, 4vw, 3.0rem);
     letter-spacing: .25em;
     padding: 20px 0px;
-    margin: 35px 0
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.title-decoration {
+    position: relative;
+    width: 100%;
+    margin: 35px auto;
+}
+
+.title-decoration .layer {
+    width: clamp(48px, 8vw, 78px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.title-decoration .layer-back {
+    top: -20%;
+    left: 13%;
+}
+
+.title-decoration .layer-front {
+    right: 13%;
+    bottom: -20%;
+}
+
+.title-decoration .circle {
+    opacity: 1;
+    transform: none;
+}
+
+.title-decoration.is-pending:not(.is-show) .circle {
+    opacity: 0;
+    transform: scale(.12) rotate(-45deg);
+}
+
+.title-decoration.is-show .circle {
+    animation: title-flower-bloom 2.9s cubic-bezier(.2, .8, .2, 1) forwards;
+}
+
+.title-decoration .circle-middle {
+    animation-delay: 2.22s;
+}
+
+@keyframes title-flower-bloom {
+    0% {
+        opacity: 0;
+        transform: scale(.12) rotate(-45deg);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.08) rotate(5deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .title-decoration .circle {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
 }
 
 .about {
     color: #245861;
-    font-family: "BIZ UD明朝";
+    font-family: "BIZ UDP明朝", "Source Han Serif JP", "Noto Serif JP", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN", serif;
     text-align: center;
-    font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);
+    font-size: clamp(0.45rem, calc(0.191rem + 2.8vw), 0.75rem);
     letter-spacing: .2em;
-    line-height: 3.5;
-    /*padding: 1.0rem 0px;*/
-    /*margin: 22px 0*/
+    line-height: 2.7;
+    margin: 80px 5px;
+    padding: 1.0rem 0px;
 }
 
 
@@ -395,17 +455,15 @@ body {
     --theme-background-opacity: 0.80;
     position: relative;
     isolation: isolate;
-    color: #b89442;
-    font-family: "BIZ UD明朝";
+    color: #245861;
+    font-family: "BIZ UDP明朝";
     /*display: inline-block;*/
-    /* font-size: clamp(0.75rem, calc(0.191rem + 2.8vw), 1.0rem);*/
     text-align: center;
     font-size: clamp(0.6rem, calc(0.191rem + 2.8vw), 1.0rem);
     letter-spacing: .4em;
-    line-height: 18;
     width: 86%;
-    padding: 3.2rem .7rem;
-    margin: 1.0rem auto;
+    padding: 40px 10px;
+    margin: 60px auto;
     box-sizing: border-box;
 }
 
@@ -415,13 +473,18 @@ body {
     inset: 0;
     z-index: -1;
     background: url("washi.png") repeat;
+    border: 0.5px solid #ffffff;
     opacity: var(--theme-background-opacity);
     pointer-events: none;
 }
 
 .theme-content p {
-    margin: 0;
-    line-height: 2;
+    margin: 30px auto;
+    line-height: 2.7;
+}
+
+.theme-content a {
+    color: #b89442;
 }
 
 @media (max-width: 600px) {
@@ -433,6 +496,10 @@ body {
     /* 円を配置するエリア */
     .layer {
         width: 35%;
+    }
+
+    .title-decoration .layer {
+        width: clamp(42px, 12vw, 64px);
     }
 
     /* 左上 */
@@ -454,7 +521,7 @@ body {
     }
 
     .theme-content {
-        width: 86%;
+        width: 90%;
         padding: 2.4rem 1rem;
         font-size: clamp(0.5rem, calc(0.191rem + 2.8vw), 0.8rem);
         letter-spacing: .1em;
@@ -527,7 +594,7 @@ small {
 }
 
 .placeholder {
-    font-family: "BIZ UD明朝";
+    font-family: "BIZ UDP明朝";
     font-size: 2rem;
     letter-spacing: .2em;
     line-height: 1.3
@@ -740,7 +807,7 @@ footer p {
 
 .webonly-date {
     color: var(--deep);
-    font-family: "BIZ UD明朝", serif;
+    font-family: "BIZ UDP明朝", serif;
     font-size: clamp(1.25rem, 3vw, 1.8rem);
     letter-spacing: .08em;
 }

@@ -28,6 +28,22 @@ if ('IntersectionObserver' in window) {
 
     document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
 
+    const decorationObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-show');
+                decorationObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        rootMargin: '0px 0px -15% 0px'
+    });
+
+    document.querySelectorAll('.title-decoration').forEach((el) => {
+        el.classList.add('is-pending');
+        decorationObserver.observe(el);
+    });
+
     const headings = document.querySelectorAll('.section h2');
     const headingObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -43,4 +59,6 @@ if ('IntersectionObserver' in window) {
     headings.forEach((heading) => {
         headingObserver.observe(heading);
     });
+} else {
+    document.querySelectorAll('.title-decoration').forEach((el) => el.classList.add('is-show'));
 }
